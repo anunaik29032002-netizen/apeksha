@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Electricity Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>⚡ Household Electricity Calculator</h1>
+
+    <p>Calculate and monitor your household electricity consumption.</p>
+
+    <h2>Select Household Appliances</h2>
+
+    <div id="applianceContainer"></div>
+
+    <button type="button" id="addBtn" onclick="addAppliance()">
+        + Add Another Appliance
+    </button>
+
+    <label>Select Number of Days</label>
+
+    <select id="days">
+        <option value="28">28 Days</option>
+        <option value="29">29 Days</option>
+        <option value="30" selected>30 Days</option>
+        <option value="31">31 Days</option>
+    </select>
+
+    <button type="button" onclick="calculate()">
+        Calculate Consumption
+    </button>
+
+    <h2>Consumption Results</h2>
+
+    <div id="results">
+        Select at least 4 appliances to calculate consumption.
+    </div>
+
+    <h2>Monthly Electricity Consumption Graph</h2>
+
+    <div class="graph-container">
+
+        <canvas id="myChart"></canvas>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
